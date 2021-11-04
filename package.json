@@ -1,10 +1,16 @@
 {
-  "name": "ghcr-hellow",
-  "version": "0.0.1",
+  "name": "@dudckd6744/ghcr-hellow",
+  "version": "0.0.0",
   "description": "",
   "author": "",
-  "private": true,
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dudckd6744/ghcr-hellow"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -21,6 +27,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@dudckd6744/ghcr-hellow": "^0.0.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
